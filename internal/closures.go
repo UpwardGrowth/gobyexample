@@ -12,7 +12,6 @@ func intSeq() func() int {
 }
 
 func Closures() {
-	fmt.Println("go 闭包的实现")
 	nextInt := intSeq()
 
 	fmt.Println(nextInt())
