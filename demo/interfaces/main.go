@@ -1,4 +1,4 @@
-package internal
+package main
 
 import (
 	"fmt"
@@ -41,7 +41,7 @@ func measure(g geometry) {
 	fmt.Println(g.perim())
 }
 
-func Interfaces() {
+func main() {
 	c := rect{width: 3, height: 4}
 	measure(c)
 

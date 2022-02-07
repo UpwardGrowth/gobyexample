@@ -1,17 +1,18 @@
-package internal
+package main
 
 import (
 	"fmt"
 	"time"
 )
 
+//goroutines: https://gobyexample-cn.github.io/goroutines
 func f(from string) {
 	for i := 0; i < 3; i++ {
 		fmt.Println(from, ":", i)
 	}
 }
 
-func Goroutine() {
+func main() {
 	f("direct")
 	go f("goroutine")
 

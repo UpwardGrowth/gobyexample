@@ -1,9 +1,9 @@
-package internal
+package main
 
 import "fmt"
 
 // 通道缓冲：https://gobyexample-cn.github.io/channel-buffering
-func ChannelBuffering() {
+func main() {
 
 	message := make(chan string, 2)
 

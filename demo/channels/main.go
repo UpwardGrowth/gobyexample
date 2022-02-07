@@ -1,11 +1,11 @@
-package internal
+package main
 
 import (
 	"fmt"
 )
 
 // channels：https://gobyexample-cn.github.io/channels
-func Channels() {
+func main() {
 	message := make(chan string)
 
 	go func() {

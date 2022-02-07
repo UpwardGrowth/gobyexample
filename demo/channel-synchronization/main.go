@@ -1,4 +1,4 @@
-package internal
+package main
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ func worker(done chan bool) {
 	done <- true
 }
 
-func ChannelSynchronization() {
+func main() {
 	done := make(chan bool)
 	go worker(done)
 
